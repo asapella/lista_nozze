@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>[Nome & Nome] – Lista nozze (serena e minimal)</title>
+  <meta name="description" content="Una pagina semplice per chi desidera farci un pensiero: piccola lista simbolica, contributo viaggio, o donazione solidale. Il regalo più bello è avervi con noi." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#fafaf9; --fg:#111827; --muted:#6b7280; --brand:#4f46e5; --card:#ffffff; --ring:#e5e7eb;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--fg)}
+    a{color:var(--brand);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1000px;margin:0 auto;padding:20px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{font-weight:800;letter-spacing:.2px}
+    .pill{padding:6px 10px;border:1px solid var(--ring);border-radius:999px;color:var(--muted);font-size:12px}
+    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center;padding:28px 0}
+    .card{background:var(--card);border:1px solid var(--ring);border-radius:18px;padding:18px;box-shadow:0 1px 0 rgba(0,0,0,.04)}
+    h1{font-size:38px;line-height:1.1;margin:8px 0 6px}
+    p.lead{font-size:18px;color:var(--muted)}
+    .grid{display:grid;gap:16px}
+    .grid.cols-3{grid-template-columns:repeat(3,1fr)}
+    .grid.cols-2{grid-template-columns:repeat(2,1fr)}
+    .section{padding:28px 0}
+    h2{font-size:26px;margin:0 0 10px}
+    h3{font-size:18px;margin:6px 0}
+    .muted{color:var(--muted)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:10px 14px;border-radius:12px;border:1px solid var(--ring);background:#fff;font-weight:600}
+    .btn.primary{background:var(--brand);color:#fff;border-color:transparent}
+    .row{display:flex;gap:12px;flex-wrap:wrap}
+    .copy{display:flex;align-items:center;gap:8px}
+    .code{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;background:#1118270e;padding:8px 10px;border-radius:10px;border:1px dashed var(--ring)}
+    .small{font-size:12px}
+    .faq details{border:1px solid var(--ring);background:#fff;border-radius:12px;padding:12px}
+    .faq summary{cursor:pointer;font-weight:600}
+    footer{padding:24px 0;color:var(--muted);font-size:13px}
+    .tag{display:inline-block;background:#11182708;border:1px solid var(--ring);padding:4px 8px;border-radius:999px;font-size:12px}
+
+    @media (max-width: 860px){
+      .hero{grid-template-columns:1fr}
+      .grid.cols-3{grid-template-columns:1fr}
+      .grid.cols-2{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">[Nome ✳︎ Nome]</div>
+      <div class="pill">Matrimonio · [DATA] · [LUOGO]</div>
+    </header>
+
+    <section class="hero">
+      <div class="card">
+        <h1>Il regalo più bello? <br> Avervi con noi.</h1>
+        <p class="lead">Non desideriamo regali. Ma sappiamo che molti tengono a fare un pensiero.
+        Qui trovate allora un modo semplice e sereno per farlo, senza imbarazzi o sorprese.</p>
+        <div class="row" style="margin-top:12px">
+          <a class="btn primary" href="#come-donarci" >Vai alla lista serena</a>
+          <a class="btn" href="#rsvp">Conferma presenza</a>
+        </div>
+      </div>
+      <div class="card">
+        <h3 style="margin-top:0">Dove & quando</h3>
+        <p class="muted">Cerimonia: <strong>[Luogo cerimonia]</strong> – ore [hh:mm]<br>
+        Festa: <strong>[Location festa]</strong> – ore [hh:mm]</p>
+        <div class="tag">Dress code: [e.g. cocktail, smart casual]</div>
+        <div style="height:14px"></div>
+        <!-- Sostituisci con embed Google Maps della location -->
+        <div style="aspect-ratio:16/9;border-radius:12px;overflow:hidden;border:1px solid var(--ring);background:#eee;display:grid;place-items:center">
+          <div class="muted">[Mappa/Foto location]</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="come-donarci" class="section">
+      <h2>Se proprio ci tenete ♥</h2>
+      <p class="muted">Una piccola lista simbolica e tre alternative: oggetti utili, contributo al viaggio, o una donazione solidale. Sentitevi liberi.</p>
+      <div class="grid cols-3">
+        <div class="card">
+          <h3>Piccola lista (15–20 cose)</h3>
+          <p class="muted">Pochi oggetti utili, a prezzi diversi. Così evitiamo doppioni e tutti si sentono a loro agio.</p>
+          <a class="btn" href="[LINK_LISTA_1]" target="_blank" rel="noopener">Apri lista oggetti</a>
+          <p class="small muted">Suggerimento: Amazon Lista Desideri / Ikea / Unieuro / ecc.</p>
+        </div>
+        <div class="card">
+          <h3>Contributo viaggio</h3>
+          <p class="muted">Se preferite, potete contribuire al viaggio di nozze con bonifico o app.</p>
+          <div class="copy">
+            <span class="code" id="iban">IBAN: IT00 A000 0000 0000 0000 0000 000</span>
+            <button class="btn" onclick="copyIBAN()" aria-label="Copia IBAN">Copia</button>
+          </div>
+          <div class="row" style="margin-top:10px">
+            <a class="btn" href="[LINK_PAYPAL]" target="_blank" rel="noopener">PayPal</a>
+            <a class="btn" href="[LINK_REVOLUT]" target="_blank" rel="noopener">Revolut</a>
+            <a class="btn" href="[LINK_SATISPAY]" target="_blank" rel="noopener">Satispay</a>
+          </div>
+          <p class="small muted">Causale consigliata: “Viaggio di nozze – [Nome Cognome]”.</p>
+        </div>
+        <div class="card">
+          <h3>Donazione solidale</h3>
+          <p class="muted">Il modo più bello di festeggiare è fare del bene insieme.</p>
+          <a class="btn" href="[LINK_ONG]" target="_blank" rel="noopener">Sostieni [ONG]</a>
+          <p class="small muted">Esempi: Emergency, Save the Children, AIRC, Medici Senza Frontiere.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 id="faq">Domande frequenti</h2>
+      <div class="grid">
+        <div class="faq grid">
+          <details>
+            <summary>Perché una lista se non volete regali?</summary>
+            <p class="muted">Perché sappiamo che molti ci tengono a farne uno: la lista serve solo a incanalare la generosità, evitando sprechi e imbarazzi. Sentitevi comunque liberi: la vostra presenza è ciò che conta.</p>
+          </details>
+          <details>
+            <summary>Posso portare il regalo fisico il giorno stesso?</summary>
+            <p class="muted">Meglio di no, per praticità: quel giorno vogliamo abbracciarvi, non gestire pacchi. Se proprio desiderate un oggetto, usate la lista.</p>
+          </details>
+          <details>
+            <summary>Ricevute o ringraziamenti?</summary>
+            <p class="muted">Vi ringrazieremo dopo l’evento con un messaggio personale. Per donazioni alle ONG, troverete la ricevuta direttamente sul loro sito.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="rsvp" class="section">
+      <h2>Conferma presenza</h2>
+      <p class="muted">Per aiutarci con l’organizzazione, confermate entro <strong>[DATA LIMITE]</strong>.</p>
+      <div class="card">
+        <!-- Incolla qui l’embed del tuo Google Form (RSVP) -->
+        <div style="aspect-ratio:16/9;border-radius:12px;overflow:hidden;border:1px dashed var(--ring);display:grid;place-items:center;background:#fff">
+          <div class="muted">Incolla l'iframe del tuo Google Form qui</div>
+        </div>
+        <div style="height:10px"></div>
+        <a class="btn" href="[LINK_FORM]" target="_blank" rel="noopener">Apri il form in una nuova scheda</a>
+      </div>
+      <p class="small muted">Privacy: i dati inseriti nel form saranno usati solo per l’organizzazione dell’evento.</p>
+    </section>
+
+    <section class="section">
+      <h2>Contatti</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <h3>Referente organizzazione</h3>
+          <p class="muted">[Nome Referente] · <a href="mailto:[email]">[email]</a> · <a href="tel:[telefono]">[telefono]</a></p>
+          <p class="small">Per intolleranze, navette, sistemazioni e altre info pratiche.</p>
+        </div>
+        <div class="card">
+          <h3>QR per gli inviti</h3>
+          <p class="muted">Inserisci un QR che punta a questa pagina, così gli invitati arrivano qui in un tocco.</p>
+          <div style="height:8px"></div>
+          <div style="aspect-ratio:1;border:1px solid var(--ring);border-radius:12px;display:grid;place-items:center;background:#fff">[QR Image]</div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="row" style="justify-content:space-between">
+        <span>© [Anno] [Nome & Nome]</span>
+        <span class="small">Fatto con ♥ e HTML semplice (niente cookies).</span>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    function copyIBAN(){
+      const text = document.getElementById('iban').innerText.replace('IBAN: ','');
+      navigator.clipboard.writeText(text).then(()=>{
+        const btns = document.getElementsByTagName('button');
+        [...btns].forEach(b=>{ if(b.innerText==='Copia'){ b.innerText='Copiato!'; setTimeout(()=>b.innerText='Copia',1500);} });
+      });
+    }
+  </script>
+</body>
+</html>
