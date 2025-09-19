@@ -92,6 +92,60 @@
       margin:0 auto;
       padding:20px
     }
+    .istruzioni {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.7;
+  color: #444;
+}
+
+.istruzioni h2 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: #5a4735;
+}
+
+.istruzioni h3 {
+  margin-top: 25px;
+  color: #7a6a58;
+  font-weight: normal;
+}
+
+.istruzioni ul, 
+.istruzioni ol {
+  text-align: left;
+  margin: 15px auto;
+  max-width: 600px;
+  padding-left: 20px;
+}
+
+.istruzioni li {
+  margin: 8px 0;
+}
+
+.istruzioni code {
+  background: #f4f0ec;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+.istruzioni a {
+  color: #9c7b62;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.istruzioni a:hover {
+  text-decoration: underline;
+}
+
+.ringraziamenti {
+  margin-top: 30px;
+  font-style: italic;
+  color: #666;
+}
+
   </style>
 </head>
 <body>
@@ -101,27 +155,40 @@
     <p>Scegli un regalo e prenotalo direttamente dal modulo</p>
   </header>
 
-      <section class="section">
-      <h2 id="faq">Domande frequenti</h2>
-      <div class="grid">
-        <div class="faq grid">
-        <p>Questa Lista è solamente indicativa, il regalo non è obbligatorio e quello che ci fa più paiacere è condividere con voi questo momento così speciale.</p>
-         <p>Questa Lista è solamente indicativa, il regalo non è obbligatorio e quello che ci fa più paiacere è condividere con voi questo momento così speciale.</p>
-          <details>
-            <summary>Perché una lista se non volete regali?</summary>
-            <p class="muted">Perché sappiamo che molti ci tengono a farne uno: la lista serve solo a incanalare la generosità, evitando sprechi e imbarazzi. Sentitevi comunque liberi: la vostra presenza è ciò che conta.</p>
-          </details>
-          <details>
-            <summary>Posso portare il regalo fisico il giorno stesso?</summary>
-            <p class="muted">Meglio di no, per praticità: quel giorno vogliamo abbracciarvi, non gestire pacchi. Se proprio desiderate un oggetto, usate la lista.</p>
-          </details>
-          <details>
-            <summary>Ricevute o ringraziamenti?</summary>
-            <p class="muted">Vi ringrazieremo dopo l’evento con un messaggio personale. Per donazioni alle ONG, troverete la ricevuta direttamente sul loro sito.</p>
-          </details>
-        </div>
-      </div>
-    </section>
+     <section class="section istruzioni">
+  <h2>Un piccolo pensiero, se desiderate</h2>
+  <p>
+    La vostra presenza è il dono più bello 💖<br>
+    Non sentitevi obbligati a portarci nulla: la gioia di festeggiare insieme a voi sarà per noi il regalo più grande.
+  </p>
+
+  <div class="donazioni">
+    <h3>Per chi desidera contribuire</h3>
+    <p>Potete farlo in due modi semplici:</p>
+    <ul>
+      <li><strong>Bonifico bancario</strong><br>
+        IBAN: <code>IT00A0000000000000000000000</code>
+      </li>
+      <li><strong>PayPal</strong><br>
+        <a href="https://paypal.me/tuoaccount" target="_blank">paypal.me/tuoaccount</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="regole">
+    <h3>Come funziona la lista nozze</h3>
+    <ol>
+      <li>Scegliete un regalo dalla lista.</li>
+      <li>“Prenotate” l’oggetto per evitare doppioni.</li>
+      <li>Acquistatelo e consegnatelo il giorno del matrimonio, o quando preferite (prima o dopo).</li>
+      <li>Se preferite, potete trasferire la somma sul nostro conto: penseremo noi all’acquisto.</li>
+    </ol>
+  </div>
+
+  <p class="ringraziamenti">
+    I ringraziamenti vi verranno consegnati il giorno stesso 🌿
+  </p>
+</section>
 
 <div class="container">
     
@@ -545,6 +612,7 @@
 </body>
 
 </html>
+
 
 
 
