@@ -29,17 +29,18 @@
       position: relative;
     }
 
-    /* Ghirlanda semplice sopra e sotto */
-    .ghirlanda {
-      width: 80px;
-      height: 80px;
-      margin: 0 auto 20px;
-      background: url('https://cdn-icons-png.flaticon.com/512/4273/4273448.png') no-repeat center/contain;
+    /* immagine */
+    .hero-image {
+      text-align: center;
+       margin: 20px 0 30px;
     }
-    .ghirlanda.bottom {
-      margin-top: 20px;
-      transform: rotate(180deg);
-    }
+    .hero-image img {
+       max-width: 280px;
+       width: 100%;
+       height: auto;
+       display: inline-block;
+       opacity: 0.95;
+}
 
     h1 {
       font-size: 2.2em;
@@ -68,7 +69,7 @@
       text-decoration: none;
       font-size: 1em;
       color: #fff;
-      background: #9c7b62;
+      background: #4997D0;
       transition: background 0.3s ease;
     }
 
@@ -85,8 +86,9 @@
 </head>
 <body>
   <div class="invito">
-    <div class="ghirlanda"></div>
-
+  <div class="hero-image">
+    <img src="romantic-wedding-bike-vector-18068753.avif" alt="Illustrazione romantica matrimonio">
+  </div>
     <h1>Karen & Simone</h1>
     <h2>Vi invitano a celebrare il loro matrimonio</h2>
 
@@ -98,8 +100,6 @@
 
     <a href="lista_nozze.html" class="btn">Lista Nozze</a>
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSek4m44kEDzY4cCh_OjqTUMXqunqAU84Pw3j0b1uFzQ2071gw/viewform?usp=header" target="_blank" class="btn">Conferma Presenza</a>
-
-    <div class="ghirlanda bottom"></div>
     <div class="footer-note">Dress code: Elegante ma comodo 🌿</div>
   </div>
 </body>
